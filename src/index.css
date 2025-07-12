@@ -8,47 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Fresh mint/green color palette for clothing brand */
-    --background: 140 30% 95%;
-    --foreground: 220 13% 18%;
+    /* VastraVerse sustainable green palette */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card-foreground: 240 10% 3.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* Vibrant mint green primary */
-    --primary: 141 56% 58%;
+    /* Eco-friendly green primary */
+    --primary: 142 76% 36%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 141 56% 52%;
+    --primary-hover: 142 76% 30%;
 
-    /* Soft mint secondary */
-    --secondary: 140 30% 88%;
-    --secondary-foreground: 220 13% 18%;
+    /* Soft neutral secondary */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 240 6% 10%;
 
-    /* Subtle backgrounds */
-    --muted: 140 20% 92%;
-    --muted-foreground: 220 8% 46%;
+    /* Clean muted tones */
+    --muted: 210 40% 96%;
+    --muted-foreground: 240 4% 46%;
 
-    /* Accent green */
-    --accent: 135 70% 45%;
+    /* Coral accent for CTAs */
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
+
+    /* Mustard accent alternative */
+    --accent-secondary: 45 93% 47%;
+    --accent-secondary-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 140 20% 85%;
-    --input: 140 20% 88%;
-    --ring: 141 56% 58%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 142 76% 36%;
 
-    /* Brand gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(141 56% 58%), hsl(135 70% 45%));
-    --gradient-hero: linear-gradient(180deg, hsl(140 30% 95%), hsl(140 40% 88%));
+    /* Sustainable gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(120 100% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36% / 0.1), hsl(120 100% 25% / 0.05));
+    --gradient-warm: linear-gradient(135deg, hsl(25 95% 53%), hsl(45 93% 47%));
     
-    /* Elegant shadows */
-    --shadow-soft: 0 4px 20px hsl(141 56% 58% / 0.1);
-    --shadow-medium: 0 8px 30px hsl(141 56% 58% / 0.15);
+    /* Gentle shadows */
+    --shadow-soft: 0 1px 3px hsl(240 10% 3.9% / 0.1);
+    --shadow-medium: 0 4px 6px -1px hsl(240 10% 3.9% / 0.1), 0 2px 4px -1px hsl(240 10% 3.9% / 0.06);
+    --shadow-large: 0 10px 15px -3px hsl(240 10% 3.9% / 0.1), 0 4px 6px -2px hsl(240 10% 3.9% / 0.05);
     
     --radius: 0.75rem;
 
@@ -114,6 +120,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
   }
 }

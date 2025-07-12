@@ -10,7 +10,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-foreground">
-              <span className="text-primary">वस्त्र</span>Verse
+              <span className="text-primary">Vastra</span>Verse
             </h1>
           </div>
 
@@ -23,10 +23,10 @@ const Header = () => {
               Browse
             </a>
             <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
-              Categories
+              Exchange
             </a>
             <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
-              About
+              Impact
             </a>
           </nav>
 

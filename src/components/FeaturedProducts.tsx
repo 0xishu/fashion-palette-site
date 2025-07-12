@@ -46,12 +46,12 @@ const FeaturedProducts = () => {
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Featured Collection
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+            Featured Exchange Items
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Handpicked pieces that blend style, comfort, and sustainability
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light">
+            Quality pre-loved pieces ready for their next chapter. Each item is verified for condition and authenticity.
           </p>
         </div>
 

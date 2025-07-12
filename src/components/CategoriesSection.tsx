@@ -4,44 +4,44 @@ import { Card, CardContent } from "@/components/ui/card";
 const categories = [
   {
     id: 1,
-    name: "Sustainable Tops",
+    name: "Men",
     icon: Shirt,
-    description: "Eco-friendly t-shirts & blouses",
+    description: "Sustainable menswear collection",
     color: "bg-gradient-to-br from-primary/10 to-primary/5"
   },
   {
     id: 2,
-    name: "Elegant Dresses",
+    name: "Women",
     icon: Crown,
-    description: "Timeless formal wear",
+    description: "Elegant women's fashion",
     color: "bg-gradient-to-br from-accent/10 to-accent/5"
   },
   {
     id: 3,
-    name: "Ethical Footwear",
-    icon: Footprints,
-    description: "Comfortable & sustainable shoes",
+    name: "Kids",
+    icon: Heart,
+    description: "Adorable sustainable kids wear",
     color: "bg-gradient-to-br from-secondary/30 to-secondary/10"
   },
   {
     id: 4,
-    name: "Accessories",
+    name: "Ethnic",
     icon: Gem,
-    description: "Handcrafted jewelry & bags",
+    description: "Traditional & cultural wear",
     color: "bg-gradient-to-br from-primary/15 to-primary/8"
   },
   {
     id: 5,
-    name: "Wellness",
-    icon: Heart,
-    description: "Yoga wear & comfort",
+    name: "Formal",
+    icon: Footprints,
+    description: "Professional & office wear",
     color: "bg-gradient-to-br from-accent/15 to-accent/8"
   },
   {
     id: 6,
-    name: "Organic Collection",
+    name: "Accessories",
     icon: Leaf,
-    description: "100% organic materials",
+    description: "Bags, jewelry & more",
     color: "bg-gradient-to-br from-secondary/40 to-secondary/15"
   }
 ];
@@ -50,12 +50,12 @@ const CategoriesSection = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Shop by Category
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+            Categories
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our curated collections designed for conscious fashion lovers
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light">
+            Discover sustainable fashion across all categories. Every exchange contributes to a more conscious future.
           </p>
         </div>
 
@@ -65,16 +65,16 @@ const CategoriesSection = () => {
             return (
               <Card
                 key={category.id}
-                className="group hover:shadow-medium transition-all duration-300 cursor-pointer border-border/50 hover:border-primary/30"
+                className="group hover:shadow-large transition-all duration-500 cursor-pointer border-border/50 hover:border-primary/30 hover:-translate-y-2"
               >
-                <CardContent className="p-6">
-                  <div className={`w-12 h-12 rounded-xl ${category.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <IconComponent className="h-6 w-6 text-primary" />
+                <CardContent className="p-8">
+                  <div className={`w-16 h-16 rounded-2xl ${category.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <IconComponent className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                     {category.name}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-lg">
                     {category.description}
                   </p>
                 </CardContent>
